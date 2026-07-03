@@ -1,83 +1,19 @@
-/* iTechNest - Premium Style */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #F5F7FA;
-    color: #334155;
-    line-height: 1.6;
-}
-
-/* HERO */
-header {
-    background: linear-gradient(135deg, #0A2540, #123A63);
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-header h1 {
-    font-size: 3.2rem;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2rem;
-    opacity: 0.9;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 14px 30px;
-    background: #1B9AA5;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #16848d;
-    transform: scale(1.05);
-}
-
-/* SECTIONS */
-section {
-    max-width: 900px;
-    margin: 25px auto;
-    background: white;
-    padding: 50px 30px;
-    border-radius: 14px;
-    box-shadow: 0 6px 25px rgba(0,0,0,0.06);
-}
-
-section:nth-child(even) {
-    background: #ffffff;
-}
-
-h2 {
-    color: #0A2540;
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-}
-
-section p {
-    font-size: 1.05rem;
-    color: #4A5568;
-}
-
-/* CONTACT */
-#contact {
-    text-align: center;
-}
-
-#contact p {
-    margin-bottom: 10px;
-}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#f5f7fa;color:#334155;line-height:1.6}
+nav{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;padding:18px 8%;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.menu a{text-decoration:none;color:#334155;margin-left:20px;font-weight:bold}
+.logo{font-size:1.4rem;font-weight:bold;color:#0a2540}
+header{background:linear-gradient(135deg,#0a2540,#123a63);color:#fff;padding:110px 8%;text-align:center}
+.hero{max-width:800px;margin:auto}
+.hero h1{font-size:3rem;margin-bottom:20px}
+.hero p{font-size:1.2rem;margin-bottom:30px}
+.btn{display:inline-block;background:#1b9aa5;color:#fff;padding:14px 28px;border-radius:8px;text-decoration:none}
+section{padding:70px 8%}
+h2{text-align:center;margin-bottom:35px;color:#0a2540}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+.card{background:#fff;padding:25px;border-radius:14px;box-shadow:0 6px 20px rgba(0,0,0,.08);transition:.3s}
+.card:hover{transform:translateY(-6px)}
+#contact{text-align:center}
+footer{background:#0a2540;color:#fff;text-align:center;padding:30px}
+@media(max-width:768px){nav{flex-direction:column;gap:12px}.hero h1{font-size:2.2rem}}
