@@ -44,3 +44,15 @@ header p {
 .btn:hover {
     background: #16848d;
 }
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    color: #0A2540;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
