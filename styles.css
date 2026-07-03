@@ -56,3 +56,21 @@ h2 {
     margin-bottom: 20px;
     font-size: 2rem;
 }
+/* Sections styling */
+
+section {
+    background: white;
+    margin: 20px auto;
+    border-radius: 12px;
+    padding: 50px 25px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+section:nth-child(even) {
+    background: #F5F7FA;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #4A5568;
+}
