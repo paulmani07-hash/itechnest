@@ -8,42 +8,48 @@
 </head>
 
 <body>
-
+<nav>
+    <div class="logo">iTechNest</div>
+    <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
 <header>
-    <h1>iTechNest</h1>
-    <p>Technology You Can Trust.</p>
+    <header>
+    <h1>Technology You Can Trust</h1>
     <p>Home Technology Support for Adelaide Families</p>
 
     <a href="#contact" class="btn">Book a Service</a>
 </header>
 
-<section>
     <h2>What We Do</h2>
-    <p>We fix slow computers, Wi-Fi issues, virus problems, and help set up new devices for home users across Adelaide.</p>
+   <section id="services">
+    <h2>Services</h2>
+    <p>Slow computers, Wi-Fi issues, virus removal, new computer setup, and home IT support.</p>
 </section>
-
-<section>
-    <h2>Our Services</h2>
+    <section id="pricing">
+    <h2>Simple Pricing</h2>
     <p>
-        • Computer performance tuning<br>
-        • Virus & scam removal checks<br>
-        • Wi-Fi troubleshooting<br>
-        • New computer setup<br>
-        • Data transfer & backups
+        Performance Tune-Up — from $69<br>
+        Digital Safety Check — from $109<br>
+        Wi-Fi Troubleshooting — from $99<br>
+        New Computer Setup — from $109
     </p>
 </section>
 
-<section>
-    <h2>Why iTechNest</h2>
+<section id="why">
+    <h2>Why Choose iTechNest</h2>
     <p>
         ✔ Local Adelaide father-and-son business<br>
         ✔ Microsoft-certified technician<br>
-        ✔ Honest advice (no unnecessary repairs)<br>
+        ✔ Honest advice — no unnecessary repairs<br>
         ✔ Home visits available<br>
-        ✔ Respect for your privacy
+        ✔ Your privacy is respected
     </p>
 </section>
-
 <section id="contact">
     <h2>Contact</h2>
     <p>Book a service today. Fast response, simple pricing.</p>
@@ -53,6 +59,32 @@
 
     <a href="tel:04XX XXX XXX" class="btn">Call Now</a>
 </section>
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
 
+.logo {
+    font-weight: bold;
+    color: #0A2540;
+    font-size: 1.2rem;
+}
+
+.nav-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #334155;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #1B9AA5;
+}
 </body>
 </html>
