@@ -1,0 +1,46 @@
+/* iTechNest Website Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F5F7FA;
+    color: #334155;
+    line-height: 1.6;
+}
+
+header {
+    background: #0A2540;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: #1B9AA5;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #16848d;
+}
