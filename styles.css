@@ -1,4 +1,4 @@
-/* iTechNest Website Styles */
+/* iTechNest - Premium Style */
 
 * {
     margin: 0;
@@ -13,64 +13,71 @@ body {
     line-height: 1.6;
 }
 
+/* HERO */
 header {
-    background: #0A2540;
+    background: linear-gradient(135deg, #0A2540, #123A63);
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
 }
 
 header h1 {
-    font-size: 3rem;
-    margin-bottom: 15px;
+    font-size: 3.2rem;
+    margin-bottom: 10px;
 }
 
 header p {
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    opacity: 0.9;
 }
 
 .btn {
     display: inline-block;
     margin-top: 25px;
-    padding: 14px 28px;
+    padding: 14px 30px;
     background: #1B9AA5;
     color: white;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 10px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 .btn:hover {
     background: #16848d;
+    transform: scale(1.05);
 }
+
+/* SECTIONS */
 section {
-    padding: 60px 20px;
     max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
+    margin: 25px auto;
+    background: white;
+    padding: 50px 30px;
+    border-radius: 14px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.06);
+}
+
+section:nth-child(even) {
+    background: #ffffff;
 }
 
 h2 {
     color: #0A2540;
-    margin-bottom: 20px;
-    font-size: 2rem;
-}
-/* Sections styling */
-
-section {
-    background: white;
-    margin: 20px auto;
-    border-radius: 12px;
-    padding: 50px 25px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-}
-
-section:nth-child(even) {
-    background: #F5F7FA;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
 }
 
 section p {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     color: #4A5568;
+}
+
+/* CONTACT */
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    margin-bottom: 10px;
 }
