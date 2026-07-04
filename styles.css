@@ -246,6 +246,7 @@ header p {
 }
 
 .card {
+  display: block;
   background: var(--white);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -267,6 +268,20 @@ header p {
 .card p {
   color: var(--ink-soft);
   font-size: 0.96rem;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--pine);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover .card-link {
+  color: var(--amber-dark);
+  transform: translateX(3px);
 }
 
 /* ---------- Why choose us ---------- */
@@ -437,6 +452,198 @@ footer p {
   .trust {
     gap: 1.2rem 2rem;
   }
+
+  .service-hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-illustration {
+    order: -1;
+    width: 200px;
+  }
+}
+
+/* ==========================================================
+   Individual service pages
+   ========================================================== */
+
+.breadcrumb {
+  display: block;
+  padding: 1.2rem 6% 0;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+
+.breadcrumb:hover {
+  color: var(--pine);
+}
+
+.service-hero {
+  padding: 3rem 6% 4rem;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(47, 93, 80, 0.08), transparent 55%),
+    var(--paper);
+}
+
+.service-hero-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.service-hero-text {
+  flex: 1.2;
+}
+
+.service-eyebrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pine);
+  margin-bottom: 0.9rem;
+}
+
+.service-hero-text h1 {
+  font-size: clamp(1.9rem, 4vw, 2.7rem);
+  font-weight: 700;
+  margin-bottom: 1.1rem;
+}
+
+.service-hero-text p {
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  max-width: 520px;
+  margin-bottom: 1.8rem;
+}
+
+.service-illustration {
+  flex: 1;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+/* Coverage section */
+.coverage {
+  padding: 5rem 6%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.coverage h2 {
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.coverage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem 2rem;
+}
+
+.coverage-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1.1rem 1.3rem;
+  font-size: 0.96rem;
+  color: var(--ink);
+}
+
+.coverage-item .tick {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--pine);
+  color: var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  margin-top: 0.1rem;
+}
+
+/* Service pricing */
+.service-pricing {
+  padding: 5rem 6%;
+  background: var(--paper-dim);
+  text-align: center;
+}
+
+.service-pricing h2 {
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
+  margin-bottom: 0.6rem;
+}
+
+.service-pricing .pricing-note {
+  color: var(--ink-soft);
+  max-width: 520px;
+  margin: 0 auto 2.2rem;
+  font-size: 0.98rem;
+}
+
+.service-price-card {
+  max-width: 320px;
+  margin: 0 auto;
+  background: var(--pine);
+  color: var(--paper);
+  border-radius: var(--radius);
+  padding: 2.4rem 2rem;
+  box-shadow: var(--shadow);
+}
+
+.service-price-card .price {
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--amber);
+  margin-bottom: 0.4rem;
+}
+
+.service-price-card .price-label {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-bottom: 1.4rem;
+}
+
+.price-fineprint {
+  margin-top: 1.4rem;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+/* CTA band */
+.service-cta {
+  padding: 5rem 6%;
+  text-align: center;
+}
+
+.service-cta h2 {
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
+  margin-bottom: 0.8rem;
+}
+
+.service-cta p {
+  color: var(--ink-soft);
+  max-width: 480px;
+  margin: 0 auto 1.8rem;
+}
+
+.service-cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* ---------- Accessibility ---------- */
