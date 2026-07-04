@@ -369,6 +369,18 @@ header p {
   font-size: 1.02rem;
 }
 
+.contact-box a {
+  color: var(--pine);
+  font-weight: 600;
+  border-bottom: 1.5px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.contact-box a:hover {
+  color: var(--pine-dark);
+  border-bottom-color: var(--amber);
+}
+
 .contact-box .btn-primary {
   margin-top: 0.8rem;
 }
