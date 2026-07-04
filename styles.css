@@ -101,15 +101,8 @@ nav {
 }
 
 .logo-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  background: var(--pine);
-  color: var(--paper);
-  font-size: 1.3rem;
+  width: 42px;
+  height: auto;
 }
 
 .logo h2 {
@@ -387,11 +380,19 @@ footer {
   text-align: center;
   padding: 2.4rem 6%;
   font-size: 0.88rem;
-  opacity: 0.9;
+}
+
+.footer-logo {
+  width: 160px;
+  height: auto;
+  margin: 0 auto 1.4rem;
+  filter: brightness(0) invert(1);
+  opacity: 0.95;
 }
 
 footer p {
   margin-bottom: 0.3rem;
+  opacity: 0.9;
 }
 
 /* ---------- Responsive ---------- */
