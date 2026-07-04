@@ -101,7 +101,7 @@ nav {
 }
 
 .logo-icon {
-  width: 42px;
+  width: 60px;
   height: auto;
 }
 
@@ -383,9 +383,9 @@ footer {
 }
 
 .footer-logo {
-  width: 160px;
+  width: 90px;
   height: auto;
-  margin: 0 auto 1.4rem;
+  margin: 0 auto 1rem;
   filter: brightness(0) invert(1);
   opacity: 0.95;
 }
