@@ -400,6 +400,103 @@ header p {
   margin-top: 0.8rem;
 }
 
+.contact-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.contact-form-box {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 2.4rem 2rem;
+  box-shadow: var(--shadow);
+  text-align: left;
+}
+
+.contact-form-intro {
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+  margin-bottom: 1.4rem;
+}
+
+.contact-form-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.contact-form-box label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-top: 0.6rem;
+}
+
+.contact-form-box input,
+.contact-form-box textarea {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  background: var(--paper);
+  resize: vertical;
+}
+
+.contact-form-box input:focus,
+.contact-form-box textarea:focus {
+  outline: none;
+  border-color: var(--pine);
+}
+
+.contact-form-box button {
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+}
+
+.form-status {
+  margin-top: 0.8rem;
+  font-size: 0.92rem;
+}
+
+.form-status-success {
+  color: var(--pine);
+  font-weight: 600;
+}
+
+.form-status-error {
+  color: #B4432F;
+  font-weight: 600;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 1.4rem 0;
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.social-links a {
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.social-links a:hover {
+  color: var(--pine);
+}
+
 /* ---------- Footer ---------- */
 footer {
   background: var(--pine-dark);
@@ -424,6 +521,27 @@ footer {
   color: var(--paper);
   opacity: 0.75;
   margin-bottom: 1.2rem;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  margin-bottom: 1.4rem;
+}
+
+.footer-social a {
+  color: var(--paper);
+  font-weight: 600;
+  font-size: 0.88rem;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, opacity 0.2s ease;
+  opacity: 0.85;
+}
+
+.footer-social a:hover {
+  opacity: 1;
+  border-bottom-color: var(--amber);
 }
 
 footer p {
